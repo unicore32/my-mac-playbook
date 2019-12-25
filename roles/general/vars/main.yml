@@ -3,6 +3,7 @@
 
 taps:
   - homebrew/cask
+  - homebrew/cask-fonts
 
 homebrew_packages:
   - { name: git, state: present }
