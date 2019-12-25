@@ -1,0 +1,20 @@
+---
+# vars file for general
+
+taps:
+  - homebrew/cask
+
+homebrew_packages:
+  - { name: git, state: present }
+  - { name: zsh, state: present }
+
+cask_packages:
+  - { name: alfred, state: present }
+  - { name: firefox, state: present }
+  - { name: google-chrome, state: present }
+  - { name: google-japanese-ime, state: present }
+  - { name: iterm2, state: present }
+  - { name: visual-studio-code, state: present }
+  - { name: vlc, state: present }
+  - { name: slack, state: present }
+  - { name: font-ricty-diminished, state: present }
