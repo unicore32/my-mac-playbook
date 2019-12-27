@@ -34,3 +34,4 @@
     user: 
       name: "{{ whoami.stdout }}"
       shell: /usr/local/bin/fish
+      become: yes
