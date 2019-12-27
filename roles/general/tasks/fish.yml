@@ -6,3 +6,31 @@
     homebrew:
       name: fish
       state: present
+
+  - name: create fish dir
+    file:
+      path: ~/.config/fish/
+      state: directory
+      recurse: true
+
+
+  - name: create fishfile
+    copy:
+      src: fishfile
+      dest: ~/.config/fish/fishfile
+
+  - name: add fish in /etc/shells
+    become: true
+    lineinfile:
+      path: /etc/shells
+      regexp: '^\/usr\/local\/bin\/fish'
+      line: '/usr/local/bin/fish'
+
+  - name: exec whoami
+    command: whoami
+    register: whoami
+
+  - name: change shell
+    user: 
+      name: "{{ whoami.stdout }}"
+      shell: /usr/local/bin/fish

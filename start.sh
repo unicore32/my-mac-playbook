@@ -13,4 +13,4 @@ if ! which ansible > /dev/null; then
     brew install ansible
 fi
 
-ansible-playbook setup-mac.yml
+ansible-playbook setup-mac.yml --ask-become-pass

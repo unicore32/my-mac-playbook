@@ -1,6 +1,7 @@
 ---
 # tasks file for general
 
+- include: homebrew.yml
+- include: mas.yml
 - include: osx-defaults.yml
-#- include: homebrew.yml
-#- include: mas.yml
+- include: fish.yml
