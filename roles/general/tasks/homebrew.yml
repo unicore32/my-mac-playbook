@@ -26,3 +26,4 @@
       name: "{{ item.name }}"
       state: "{{ item.state }}"
     with_items: "{{ cask_packages }}"
+    failed_when: no
