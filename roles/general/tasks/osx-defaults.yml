@@ -18,7 +18,7 @@
 - name: disable dock show-recents
   osx_defaults:
     domain: com.apple.dock.plist
-    key: 'show-recents'
+    key: "show-recents"
     type: boolean
     value: false
 
