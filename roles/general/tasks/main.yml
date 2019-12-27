@@ -1,4 +1,6 @@
 ---
 # tasks file for general
 
-- include: homebrew.yml
+- include: osx-defaults.yml
+#- include: homebrew.yml
+#- include: mas.yml

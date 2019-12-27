@@ -1,0 +1,35 @@
+---
+# tasks file for osx-defaults
+
+- name: enable dock autohide
+  osx_defaults:
+    domain: com.apple.dock.plist
+    key: autohide
+    type: boolean
+    value: true
+
+- name: set dock size
+  osx_defaults:
+    domain: com.apple.dock.plist
+    key: tilesize
+    type: float
+    value: 32
+
+- name: disable dock show-recents
+  osx_defaults:
+    domain: com.apple.dock.plist
+    key: 'show-recents'
+    type: boolean
+    value: false
+
+- name: disable natural scroll
+  osx_defaults:
+    key: com.apple.swipescrolldirection
+    type: boolean
+    value: false
+
+- name: set show file extensions in finder
+  osx_defaults:
+    key: AppleShowAllExtensions
+    type: boolean
+    value: true

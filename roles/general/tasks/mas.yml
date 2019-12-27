@@ -1,0 +1,7 @@
+---
+# Mac App Store
+
+- block:
+  - name: mas install
+    command: mas install "{{ item.id }}"
+    with_items: "{{ mas_apps }}"

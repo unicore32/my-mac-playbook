@@ -1,0 +1,8 @@
+---
+# fish
+
+- block:
+  - name: fish install
+    homebrew:
+      name: fish
+      state: present

@@ -7,6 +7,7 @@ taps:
 
 homebrew_packages:
   - { name: git, state: present }
+  - { name: mas, state: present }
   - { name: zsh, state: present }
 
 cask_packages:
@@ -17,5 +18,9 @@ cask_packages:
   - { name: iterm2, state: present }
   - { name: visual-studio-code, state: present }
   - { name: vlc, state: present }
+  - { name: skitch, state: present }
   - { name: slack, state: present }
   - { name: font-ricty-diminished, state: present }
+
+mas_apps:
+  - { name: Magnet, id: 441258766 }
