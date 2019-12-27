@@ -31,7 +31,5 @@
     register: whoami
 
   - name: change shell
-    user: 
-      name: "{{ whoami.stdout }}"
-      shell: /usr/local/bin/fish
-      become: yes
+    command: 'chsh -s /usr/local/bin/fish "{{ whoami.stdout }}"'
+    become: yes
